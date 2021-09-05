@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./Img/pinterest.ico" type="favicon">  
     <link rel="stylesheet" href="main.css" />
     <title>Pinterest</title>
   </head>
@@ -23,27 +31,29 @@
         </div>
       </div>
     </nav> -->
-
-    <div class="container">
+<nav id="navbar-pinterest">
+<div class="container">
       <div class="boxContainer">
         <div class="logo box">
-          Logo
-          <!-- <img src="./Img/pin.png" alt="Pinterest Logo" > -->
+          <i class="fab fa-pinterest"></i>
         </div>
         <div class="button box">
           <a href="https://www.pinterest.com.mx" id="">Inicio</a>
         </div>
         <div class="today box">Hoy</div>
         <div class="search box">
-          <input type="search" id="search" placeholder="Buscar" />
+          <form action="" class="box">
+            <input type="search" id="search" placeholder="Buscar" />
+          </form>
         </div>
         <div class="lateralControls box">
-          <div class="bell box">B</div>
-          <div class="inbox box">M</div>
-          <div class="profile box">P</div>
-          <div class="more box">+</div>
+          <div class="bell box"><i class="fas fa-bell"></i></div>
+          <div class="inbox box"><i class="fas fa-comment-dots"></i></div>
+          <div class="profile box"><i class="fas fa-user-circle"></i></div>
         </div>
       </div>
     </div>
+</nav#>
+    
   </body>
 </html>
