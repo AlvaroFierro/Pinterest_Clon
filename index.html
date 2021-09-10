@@ -11,35 +11,52 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./Img/pinterest.ico" type="favicon" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="./Img/pinterest.ico" type="favicon" />
     <title>Pinterest</title>
   </head>
   <body>
     <header>
       <nav id="navbar-pinterest">
+        <!-- This is the main container of the navbar -->
         <div class="container">
-          <div class="boxContainer">
-            <div class="logo box">
-              <i class="fab fa-pinterest"></i>
+          <!-- Wrapper is the father of the childs -->
+          <div class="wrapper">
+            <div class="left">
+              <div class="box" id="logo"><i class="fab fa-pinterest"></i></div>
+              <div class="button box">
+                <a href="https://www.pinterest.com.mx " id="buttonId"
+                  ><b>Inicio</b></a
+                >
+              </div>
+              <div class="box" id="today"><a href="#">Hoy</a></div>
             </div>
-            <div class="button box">
-              <a href="https://www.pinterest.com.mx" id=""><b>Inicio</b></a>
-            </div>
-            <div class="today box">Hoy</div>
-            <div class="search box">
-              <form action="" class="box">
-                <input type="search" id="search" placeholder=" Buscar" />
+            <div class="center">
+              <form>
+                <input class="finder" type="search" placeholder="Buscar" />
               </form>
             </div>
-            <div class="lateralControls box">
-              <div class="bell box"><i class="fas fa-bell"></i></div>
-              <div class="inbox box"><i class="fas fa-comment-dots"></i></div>
-              <div class="profile box"><i class="fas fa-user-circle"></i></div>
+            <div class="right">
+              <div class="box" id="notifications">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="box" id="message">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <div class="box" id="profile-img">
+                <i class="fas fa-user-circle"></i>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <article>
+      <div class="content">
+        <div class="element">Uno</div>
+        <div class="element">Dos</div>
+        <div class="element">Tres</div>
+      </div>
+    </article>
   </body>
 </html>
