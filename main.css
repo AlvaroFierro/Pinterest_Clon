@@ -1,83 +1,98 @@
-body {
-  background-color: #333;
-  font-family: Helvetica;
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .container {
   width: 100%;
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   top: 0;
   left: 0;
-  position: fixed;
+  position: -webkit-sticky;
 }
-.boxContainer {
+.wrapper {
+  background-color: #333;
   width: 100%;
-  background-color: #ffffff;
-  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.left,
+.center,
+.right {
+  display: flex;
+  padding: 0.5em;
 }
 .box {
-  display: inline;
-  padding: 15px;
-  text-align: center;
-}
-.logo:hover,
-.today:hover,
-.bell:hover,
-.inbox:hover,
-.profile:hover {
-  border-radius: 50%;
-  background-color: #e5e5e5;
-}
-
-.button {
-  border-style: none;
-  background-color: #000;
-  border-radius: 24px;
-  text-align: center;
-  /* font-size: 50px; */
-  color: white;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-input:focus {
-  border: none;
-  outline: none;
-}
-#search::placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-#search {
-  padding-left: 15px;
-  border: none;
-  background-color: #efefef;
-  width: 66%;
-  border-radius: 24px;
-  height: 35px;
-  font-size: 1rem;
-}
-#search:hover {
-  background-color: #e1e1e1;
-}
-.lateralControls {
-  text-align: center;
-  width: 10%;
-  /* justify-content: flex-end; */
+  padding: 1em;
+  cursor: pointer;
 }
 .fab {
   font-size: 1.5rem;
   color: #e60023;
 }
+.button {
+  width: 100%;
+  background-color: #111;
+  border-radius: 24px;
+  color: white;
+  text-align: center;
+}
+#buttonId {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.finder {
+  height: 48px;
+  align-items: center;
+  border: none;
+  border-radius: 24px;
+  width: 50rem;
+  background-color: #efefef;
+  padding-left: 15px;
+  font-size: 1rem;
+}
+.finder:focus {
+  border: none;
+  outline: none;
+  background-color: #e1e1e1;
+}
 .fa-bell,
 .fa-comment-dots,
-.fa-user-circle,
-.fa-angle-down {
-  font-size: 1.35rem;
+.fa-user-circle {
   color: #767676;
+}
+#today:hover {
+  border-radius: 24px;
+  background-color: #e5e5e5;
+}
+#logo:hover,
+#notifications:hover,
+#message:hover,
+#profile-img:hover {
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.content {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.element {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  margin: 10px;
+  display: inline-block;
 }
