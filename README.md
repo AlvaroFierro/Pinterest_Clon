@@ -1,4 +1,4 @@
-#Pinterest clon
+# Pinterest clon
 
 This is a project who pretend to create a Pinterest clon, just for practicing web development. 
 
